@@ -28,6 +28,7 @@ any order of the valid characters should return the corresponding list of tokens
 * Integers count as one integer, unless they are separated by any non-digit character. 
 (This way we could implement a different notation like: * 2 4 2 == 16)
 * Operators are just 1 character long
+* You don't have to handle negative integers, we will delegate that task to our theoretical parser
 
 **Example:** "1 + 2" should be Vector(Integer(1), Operator('+'), Integer(2))
 

@@ -7,6 +7,8 @@ object IntCalculatorLexer {
 
   def error(): Nothing = throw new Exception("Syntax error")
 
+  def run(source: String): Vector[Token] = run(source.toList)
+
   def run(source: List[Char], acc: Vector[Token] = Vector()): Vector[Token] =
     source match {
       case Nil => acc

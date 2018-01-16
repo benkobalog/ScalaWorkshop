@@ -13,25 +13,24 @@ class IntCalculatorLexerSpec extends FlatSpec with Matchers {
                                  Integer(2))
 
   "SimpleTokenizer" should "process operators and single digit numbers" in {
-    assert(result == IntCalculatorLexer.run("1+2".toList))
-    assert(result3 == IntCalculatorLexer.run("1+2*9-2".toList))
+    IntCalculatorLexer.run("1+2") should be(result)
+    IntCalculatorLexer.run("1+2*9-2") should be(result3)
   }
 
   it should "handle single whitespaces" in {
-    assert(result == IntCalculatorLexer.run("1 +2 ".toList))
-    assert(result3 == IntCalculatorLexer.run(" 1 + 2 * 9 - 2 ".toList))
+    IntCalculatorLexer.run("1 +2 ") should be(result)
+    IntCalculatorLexer.run(" 1 + 2 * 9 - 2 ") should be(result3)
   }
 
   it should "handle any number of whitespaces" in {
-    assert(result == IntCalculatorLexer.run("1    +2 ".toList))
-    assert(result3 == IntCalculatorLexer.run(" 1 + 2 * 9    - \n 2  ".toList))
+    IntCalculatorLexer.run("1    +2 ") should be(result)
+    IntCalculatorLexer.run(" 1 + 2 * 9    - \n 2  ") should be(result3)
   }
 
   it should "process integers with more than one digits" in {
     val result2 =
       Vector(Integer(123), Operator('+'), Integer(256))
-
-    assert(result2 == IntCalculatorLexer.run("123 + 256".toList))
+    IntCalculatorLexer.run("123 + 256") should be(result2)
   }
 
 }

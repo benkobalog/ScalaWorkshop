@@ -10,15 +10,15 @@ object SudokuChecker {
   }
 
   def sudoku2(grid: Array[Array[Char]]): Boolean = {
-    val squares: Seq[Seq[Char]] =
+    val squares =
       for {
-        i <- 0 to 2
-        j <- 0 to 2
+        tileX <- 0 to 6 by 3
+        tileY <- 0 to 6 by 3
       } yield
         for {
-          k <- 0 to 2
-          l <- 0 to 2
-        } yield grid(i * 3 + k)(j * 3 + l)
+          offsetX <- 0 to 2
+          offsetY <- 0 to 2
+        } yield grid(tileX + offsetX)(tileY + offsetY)
 
     (grid.map(_.toSeq) ++ grid.transpose.map(_.toSeq) ++ squares)
       .forall(isLegal)

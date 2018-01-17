@@ -58,6 +58,11 @@ For a more comprehensive list and some visual explanations:
  https://superruzafa.github.io/visual-scala-reference/index.html#product
  
 ##### Some methods could be composed from other methods:
-* span(p)      == (takeWhile(p),  dropWhile(p)) // where p is a function returning a Boolean
-* partition(p) == (filter(p), filterNot(p))
-* splitAt(n)   == (take(n), drop(n)) // where n is an index
+```scala
+val l = List(1, -3, 5, 9, -4)
+val n = 2; val p = (n: Int) => n > 3 
+
+l.span(p)      == (l.takeWhile(p),  l.dropWhile(p))
+l.partition(p) == (l.filter(p), l.filterNot(p))
+l.splitAt(n)   == (l.take(n), l.drop(n))
+```

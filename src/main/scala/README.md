@@ -66,3 +66,6 @@ l.span(p)      == (l.takeWhile(p),  l.dropWhile(p))
 l.partition(p) == (l.filter(p), l.filterNot(p))
 l.splitAt(n)   == (l.take(n), l.drop(n))
 ```
+
+### Check this out if you want to learn more Scala
+https://gist.github.com/d1egoaz/2180cbbf7d373a0c5575f9a62466e5e1

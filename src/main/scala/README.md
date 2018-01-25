@@ -69,3 +69,6 @@ l.splitAt(n)   == (l.take(n), l.drop(n))
 
 ### Check this out if you want to learn more Scala
 https://gist.github.com/d1egoaz/2180cbbf7d373a0c5575f9a62466e5e1
+
+### VM image
+[link](https://epam-my.sharepoint.com/:u:/p/benko_balog/EeHtbFP5rGVHtIWBd-e9gO0BJQjkK7KBs1z-HjjNQXZOtg?e=ajIvCv)

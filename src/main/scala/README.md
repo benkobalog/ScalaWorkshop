@@ -71,4 +71,4 @@ l.splitAt(n)   == (l.take(n), l.drop(n))
 https://gist.github.com/d1egoaz/2180cbbf7d373a0c5575f9a62466e5e1
 
 ### VM image
-[link](https://epam-my.sharepoint.com/:u:/p/benko_balog/EeHtbFP5rGVHtIWBd-e9gO0BJQjkK7KBs1z-HjjNQXZOtg?e=ajIvCv)
+[link](https://epam-my.sharepoint.com/:u:/p/benko_balog/Ed0XH3aEv6RIu6GM5UaVAUQBI3B7LEvXxOm4Bqy72-jOZg?e=bd7Xg5)

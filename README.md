@@ -72,4 +72,7 @@ https://gist.github.com/d1egoaz/2180cbbf7d373a0c5575f9a62466e5e1
 
 ### VM image
 [link](https://epam-my.sharepoint.com/:u:/p/benko_balog/Ed0XH3aEv6RIu6GM5UaVAUQBI3B7LEvXxOm4Bqy72-jOZg?e=bd7Xg5)
-(file://EPHUBUDW0181/Users/Benko_Balog/Documents/ScalaExercises.ova)
+
+
+(file://EPHUBUDW0181/Users/Benko_Balog/Documents/share/ScalaExercises.ova)
+
